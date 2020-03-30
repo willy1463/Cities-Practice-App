@@ -63,9 +63,7 @@ public class DataService {
 				}
 				
 				//Calulate the index of the current element in the name oredered list
-				int namesIndexCurrent = currentSequence.size() == 0 ? 
-						citiesSortedByName.indexOf(citiesSortedById.get(i)) :
-						citiesSortedByName.indexOf(currentSequence.get(currentSequence.size()-1));
+				int namesIndexCurrent =	citiesSortedByName.indexOf(currentSequence.get(currentSequence.size()-1));
 				//Calculate the index in the name ordered list of the next numerically orered element		
 				int namesIndexNext = citiesSortedByName.indexOf(citiesSortedById.get(j));
 				

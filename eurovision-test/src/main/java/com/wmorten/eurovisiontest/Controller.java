@@ -43,8 +43,11 @@ public class Controller {
 		String startingLetterValue = String.valueOf(startingLetter.orElse("a").charAt(0)).toLowerCase(); 
 
 		List<City> citiesList = dataService.getCityListFromStartPoint(sampleSizeValue, startingLetterValue);
-				
-		return dataService.findBiggestSequence(citiesList);
+		
+		List<City> returnList = dataService.findBiggestSequence(citiesList);
+		System.out.println(returnList);
+		
+		return returnList;
 	}
 	
 }
